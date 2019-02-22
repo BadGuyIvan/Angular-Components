@@ -1,0 +1,18 @@
+.container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: inherit;
+}
+
+.message {
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    background-color: bisque;
+    margin: 10px;
+}

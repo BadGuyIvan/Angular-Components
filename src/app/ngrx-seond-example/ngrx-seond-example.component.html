@@ -1,0 +1,29 @@
+<div *ngIf='post | async as p'>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>{{ p.text }}</h2>
+        <h4>Votes: {{ p.likes }}</h4>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 mb-2 mt-2">
+      <div class="btn-group">
+        <button type="button" class="btn btn-outline-primary" (click)='upvote()'>Upvote</button>
+        <button type="button" class="btn btn-outline-primary" (click)='downvote()'>Downvote</button>
+        <button type="button" class="btn btn-outline-primary" (click)='resetPost()'>Reset</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <input class="form-control mb-2" [(ngModel)]='text'>
+      <button type="button" class="btn btn-outline-primary" (click)='editText()'>Change Title</button>
+    </div>
+  </div>
+</div>
+
+</div>

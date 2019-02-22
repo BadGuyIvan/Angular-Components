@@ -1,0 +1,5 @@
+<div class="container">
+  <div @flip class="message" *ngFor="let message of messages | async">
+    {{message.content}}
+  </div>
+</div>

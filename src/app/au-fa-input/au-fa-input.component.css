@@ -1,0 +1,25 @@
+.icon {
+    width: 20px;
+    text-align: center;
+    background: #ffffff;
+    padding-left: 5ox;
+    padding-right: 2px;
+}
+
+.wrapper {
+    padding: 2px;
+    margin: 2px;
+    display: inline-block;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+}
+
+.wrapper~input:focus  {
+    border: 1px solid blue;
+}
+
+input {
+    border: none;
+    outline: none;
+    border-radius: 25px;
+}

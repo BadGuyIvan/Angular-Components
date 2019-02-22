@@ -1,0 +1,10 @@
+<button #loginButton>Open Modal</button>
+
+<ng-template #ModalBody>
+  <div class="modal-inner">
+    Hello Angular 
+    <button class="btn btn-danger" (click)="closeModal()">X</button>
+  </div>
+</ng-template>
+
+<app-modal @fadeInOut *appModalOpen="loginButton" [body]="ModalBody"></app-modal>

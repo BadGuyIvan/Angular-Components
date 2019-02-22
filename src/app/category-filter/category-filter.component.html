@@ -1,0 +1,12 @@
+<div>
+  <label>Category Filter:</label>
+    <select [value]="category || 'All'" (change)="category=$event.target.value">
+      <option value="All">All</option>
+      <option value="Watersports" >Watersports</option>
+      <option value="Soccer">Soccer</option>
+      <option value="Chess">Chess</option>
+    </select>
+</div>
+<div *ngFor="let item of products | filter:(category || 'All')">
+  {{item.category}}
+</div>

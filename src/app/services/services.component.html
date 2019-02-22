@@ -1,0 +1,10 @@
+<p>
+  {{ data.post.Error }}
+</p>
+<p *ngIf="data.post.pending">Loading...</p>
+<div *ngIf="data.post.length">
+  <div *ngFor="let post of data.post">
+    <a routerLink={{post.id}}>{{ post.title }}</a>
+  </div>
+</div>
+

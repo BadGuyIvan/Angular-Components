@@ -1,0 +1,9 @@
+<!-- <div class="modal-overlay" (click)="closeModal()">
+  <div class="modal-body" (click)="cancelModal($event)"> -->
+<div class="modal-overlay">
+  <div class="modal-body">
+    <ng-container *ngIf="body">
+      <ng-container *ngTemplateOutlet="body"></ng-container>
+    </ng-container>
+  </div>
+</div>
