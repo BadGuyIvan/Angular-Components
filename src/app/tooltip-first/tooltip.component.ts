@@ -26,10 +26,11 @@ export class TooltipComponent implements OnInit {
   }
 
   ngOnInit() {
-    const {top} = this.config.host.getBoundingClientRect();
-    const {height} = this.tooltipContainer.nativeElement.getBoundingClientRect();
-    console.log(`top ${top} height ${height}`)
-    this.top = `${(top - height)}px`;
+    const { top } = this.config.host.getBoundingClientRect();
+    const _height = this.config.host.getBoundingClientRect().height;
+    console.log(_height)
+    const { height } = this.tooltipContainer.nativeElement.getBoundingClientRect();
+    this.top = `${top-height-_height*2-20}px`;
   }
 
 }

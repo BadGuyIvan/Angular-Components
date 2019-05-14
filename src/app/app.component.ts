@@ -8,7 +8,7 @@ import { Router, NavigationStart, NavigationCancel, NavigationEnd } from '@angul
 })
 export class AppComponent implements AfterViewInit {
 
-  loading;
+  loading: boolean;
 
   constructor(private router: Router) {
     this.loading = true;
